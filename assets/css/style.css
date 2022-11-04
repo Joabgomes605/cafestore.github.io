@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+    --border-text: #2ecc71;
+  }
+
+body{
+    overflow: hidden !important;
+}
+
+.bg_geral{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #141414, #141414,  #996DFF);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+nav{
+    width: 68%;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+}
+nav ul li a{
+    color: #fff;
+    font-weight: 500;
+}
+nav ul button{
+    margin-left: 5rem;
+    padding: 6px;
+    width: 160px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #996DFF;
+    border-radius: 5px;
+    text-transform:uppercase ;
+    cursor: pointer;
+    font-weight: 500;
+}
+#btn_mobile{
+    display: none;
+    cursor: pointer;
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 4rem;
+}
+.text h2 {
+    text-shadow: -1px -1px 0 var(--border-text), 1px -1px 0 var(--border-text), -1px 1px 0 var(--border-text), 1px 1px 0 var(--border-text);
+    font-size: 4rem;
+    color:#141414;
+}
+main img{
+    width: 60%;
+}
